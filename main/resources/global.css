@@ -1,0 +1,57 @@
+@font-face {
+	font-family: RobotoRegular;
+	src: url('./fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url('./fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: Raleway;
+	src: url('./fonts/Raleway-VariableFont_wght.ttf');
+}
+
+* 
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html 
+{
+	font-family: 'Montserrat';
+	color: white;
+	scroll-behavior: smooth;
+}
+
+
+body 
+{
+	background: #2d3357;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+button
+{
+	padding: 10px;
+	cursor: pointer;
+}
+
+button:hover
+{
+	text-decoration: underline;
+}
+
+details summary:focus-visible
+{
+	outline: none;
+}
