@@ -34,7 +34,7 @@ globalThis.QuizQuestions = [
 			},
 			{
 				label: "Сатурна",
-				isCorrect: false
+				isCorrect: true
 			},
 			{
 				label: "Планеты Земной группы",
