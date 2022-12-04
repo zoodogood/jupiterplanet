@@ -7,7 +7,7 @@ body
 {
 	padding-block: 100px;
 	background-image: linear-gradient(45deg, black 30%, transparent);
-	justify-content: baseline;
+	justify-content: start;
 }
 
 body > main 
@@ -76,15 +76,26 @@ body > main
 	display: flex;
 	gap: 15px;
 	flex-direction: column;
-
-	opacity: 1;
-	transition: opacity 300ms;
 }
 
 .question.hidden
 {
 	display: none;
-	opacity: 0;
+}
+
+.question:not(.hidden)
+{
+	animation: question-apparance 2000ms;
+}
+
+@keyframes question-apparance {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 .question-options-list
@@ -109,6 +120,27 @@ body > main
 	font-style: italic;
 	pointer-events: none;
 }
+
+.question-option[disabled][data-iscorrect='true']
+{
+	animation: accent-correct-options 1s;
+}
+
+@keyframes accent-correct-options {
+	0% {
+		background-color: transparent;
+	}
+
+	50% {
+		background-color: green;
+	}
+
+	100% 
+	{
+		background-color: transparent;
+	}
+}
+
 
 .question-option:hover
 {

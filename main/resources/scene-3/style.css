@@ -1,0 +1,94 @@
+h1 
+{
+	font-family: 'RobotoRegular', sans-serif;
+}
+
+
+body
+{
+	padding-block: 100px;
+	background-image: linear-gradient(45deg, black 30%, transparent);
+	justify-content: start;
+}
+
+body:has(.scene-loading-background)
+{
+	overflow: hidden;
+}
+
+body > main 
+{
+	display: flex;
+	flex-direction: column;
+	width: min(900px, 90vw);
+	gap: 30px;
+	padding: 40px;
+
+	backdrop-filter: sepia(0.5) blur(3px);
+}
+
+ul li
+{
+	list-style: inside;
+	font-style: italic;
+}
+
+p, li
+{
+	font-family: 'RobotoRegular', sans-serif;
+}
+
+img 
+{
+	width: 100%;
+	opacity: 0.55;
+	margin-block: 10px;
+}
+
+
+.scene-redirect button
+{
+	border-radius: 50px;
+	background: none;
+	color: #aaaaaa90;
+	border: 2px solid #aaaaaa90;
+	outline: none;
+	width: 300px;
+	transition: width 300ms;
+}
+
+.scene-redirect:hover button
+{
+	color: #aaaaaa;
+	background-color: #aaaaaa20;
+	width: 400px;
+}
+
+
+summary h1,
+summary h2,
+summary h3,
+summary h4,
+summary h5,
+summary h6
+{
+	display: inline;
+}
+
+details[open]
+{
+	padding-bottom: 30px;
+}
+
+body > main > *::after
+{
+	content: '';
+	display: block;
+	width: 70%;
+	height: 1px;
+
+	margin-top: 20px;
+	margin-inline: auto;
+	background-color: #aaaaaa20;
+}
+

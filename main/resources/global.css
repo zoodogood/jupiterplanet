@@ -55,3 +55,8 @@ details summary:focus-visible
 {
 	outline: none;
 }
+
+a 
+{
+	color: #b2b2ef;
+}
