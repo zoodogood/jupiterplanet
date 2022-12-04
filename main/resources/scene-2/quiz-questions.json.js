@@ -60,7 +60,7 @@ globalThis.QuizQuestions = [
 			},
 			{
 				label: "Окунётесь вглубь Юпитера, но не достигните ядра",
-				isCorrect: false
+				isCorrect: true
 			},
 			{
 				label: "Сильно ударитесь ввиду поверхностного натяжения газов",
@@ -95,11 +95,11 @@ globalThis.QuizQuestions = [
 			},
 			{
 				label: "Открыто для обсуждений",
-				isCorrect: false
+				isCorrect: true
 			},
 			{
 				label: "Нажмите, чтобы получить ссылку",
-				isCorrect: false
+				isCorrect: true
 			}
 		],
 		reasoning: `<p>
