@@ -22,7 +22,7 @@ body > main
 	flex-direction: column;
 	width: min(900px, 90vw);
 	gap: 30px;
-	padding: 40px;
+	padding: calc(10px + 1vw);
 
 	backdrop-filter: sepia(0.5) blur(3px);
 }
